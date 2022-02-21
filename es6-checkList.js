@@ -55,19 +55,34 @@ const arr2 = [2, 4, 5, 1, 6, 2, 6, 7];
 const number2 = arr2.filter((n) => n % 2);
 // console.log(number2);
 // ৭. একটা array এর মধ্যে অনেকগুলা অবজেক্ট আছে। সেখানে যেই অবজেক্ট এর price আছে ৫০০০ টেক্কা সেই অবজেক্টকে find দিয়ে বের করো।
-const shop = [
-  { name: "nokia b50", price: 5400 },
-  { name: "symphony rhf", price: 5000 },
-  { name: " glass", price: 500 },
-  { name: "ink  ", price: 52 },
-  { name: "shart", price: 4000 },
-];
-const haigshtPrice = shop.find((p) => p.price == 5000);
+
+{
+  const shop = [
+    { name: "nokia b50", price: 5400 },
+    { name: "symphony rhf", price: 5000 },
+    { name: " glass", price: 500 },
+    { name: "ink  ", price: 52 },
+    { name: "shart", price: 4000 },
+  ];
+  const haigshtPrice = shop.find((p) => p.price == 5000);
+}
 // console.log(haigshtPrice);
 // ৭.৫ [এক্সট্রা] জাভাস্ক্রিপ্ট এ array এর map, forEach, filter, find কোনটা দিয়ে কি হয়। সেটার একটা সামারি লিখে ফেলো।
+/* 
+1. map . map vitore vitore loop calye akta array sob golo ke nei . abong newar por 
+  akta array return kore 
+2. forEach . forEach vitore vitore loop calaye sob golo ke nei kinto return kore na 
+3. filter . filter vitore vitore loop calaye function ar vitor ar sorto onojaye joto 
+   golo mil ase sob golo return korbe
+4. find . find vitore vitore loop calaye function ar vitor ar sorto onojaye jeta 
+   protome pabe oi ta return kore baki golo sorto poron korle o return korena 
+*/
 
 // ৮. সিম্পল একটা জাভাস্ক্রিপ্ট অবজেক্ট এর কোন একটা প্রোপার্টিকে ভেরিয়েবল হিসেবে ডিক্লেয়ার করার জন্য destructuring ইউজ করো।
+const shop2 = { name: "nokia b50", price: 5400 };
 
+const { name, price } = shop2;
+console.log(name, price);
 // ৯. [চ্যালেঞ্জিং] array এর destructuring করবে আর সেটা করার জন্য তুমি এরে এর থার্ড পজিশন এর উপাদান কে destructuring করে 'three' নামক একটা ভেরিয়েবল এ রাখবে।
 
 // ১০. তিনটা প্যারামিটার ওয়ালা একটা ফাংশন লিখবে। যেই ফাংশনের কাজ হবে তিনটা প্যারামিটার নিয়ে সেই তিনটা প্যারামিটার এর যোগ করে যোগফল রিটার্ন করবে। আর থার্ড প্যারামিটার এর একটা ডিফল্ট ভ্যালু থাকবে। সেটা হবে ৭।
