@@ -38,7 +38,8 @@ const fun4 = (x, y) => {
 };
 // console.log(fun4(4, 4));
 // ৪. [হোম ওয়ার্ক] একটু গুগলে সার্চ দাও: javascript function declaration vs arrow function তারপর কয়েকটা আর্টিকেল পড়ে বুঝার চেষ্টা করো।
-
+// arrow function always annonimous function,
+// typw of arrow function is function expression
 // ৪.৫. [এক্সট্রা আরেকটা হোম ওয়ার্ক। এইটা ভিডিওতে বলা নাই]: জাভাস্ক্রিপ্ট এর var, let, const এর মধ্যে প্রার্থক্য কি?
 
 // ৫. অনেকগুলা সংখ্যার একটা array হবে। তারপর তোমার কাজ হবে array এর উপরে map ইউজ করে। প্রত্যেকটা উপাদানকে ৫ দিয়ে গুন্ করে গুনফল আরেকটা array হিসেবে রাখবে। পুরা কাজটা এক লাইনে হবে।
@@ -49,7 +50,7 @@ const number = arr1.map((n) => n * 5);
 // ৬. [ চ্যালেঞ্জিং। গুগলে সার্চ দিয়ে বের করো ] অনেকগুলা সংখ্যার একটা array থেকে শুধু বিজোড় সংখ্যা বের করে নিয়ে আসার জন্য filter ইউজ করো
 const arr2 = [2, 4, 5, 1, 6, 2, 6, 7];
 const number2 = arr2.filter((n) => n % 2);
-console.log(number2);
+// console.log(number2);
 // ৭. একটা array এর মধ্যে অনেকগুলা অবজেক্ট আছে। সেখানে যেই অবজেক্ট এর price আছে ৫০০০ টেক্কা সেই অবজেক্টকে find দিয়ে বের করো।
 const shop = [
   { name: "nokia b50", price: 5400 },
@@ -59,7 +60,7 @@ const shop = [
   { name: "shart", price: 4000 },
 ];
 const haigshtPrice = shop.find((p) => p.price == 5000);
-console.log(haigshtPrice);
+// console.log(haigshtPrice);
 // ৭.৫ [এক্সট্রা] জাভাস্ক্রিপ্ট এ array এর map, forEach, filter, find কোনটা দিয়ে কি হয়। সেটার একটা সামারি লিখে ফেলো।
 
 // ৮. সিম্পল একটা জাভাস্ক্রিপ্ট অবজেক্ট এর কোন একটা প্রোপার্টিকে ভেরিয়েবল হিসেবে ডিক্লেয়ার করার জন্য destructuring ইউজ করো।
