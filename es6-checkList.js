@@ -51,7 +51,15 @@ const arr2 = [2, 4, 5, 1, 6, 2, 6, 7];
 const number2 = arr2.filter((n) => n % 2);
 console.log(number2);
 // ৭. একটা array এর মধ্যে অনেকগুলা অবজেক্ট আছে। সেখানে যেই অবজেক্ট এর price আছে ৫০০০ টেক্কা সেই অবজেক্টকে find দিয়ে বের করো।
-
+const shop = [
+  { name: "nokia b50", price: 5400 },
+  { name: "symphony rhf", price: 5000 },
+  { name: " glass", price: 500 },
+  { name: "ink  ", price: 52 },
+  { name: "shart", price: 4000 },
+];
+const haigshtPrice = shop.find((p) => p.price == 5000);
+console.log(haigshtPrice);
 // ৭.৫ [এক্সট্রা] জাভাস্ক্রিপ্ট এ array এর map, forEach, filter, find কোনটা দিয়ে কি হয়। সেটার একটা সামারি লিখে ফেলো।
 
 // ৮. সিম্পল একটা জাভাস্ক্রিপ্ট অবজেক্ট এর কোন একটা প্রোপার্টিকে ভেরিয়েবল হিসেবে ডিক্লেয়ার করার জন্য destructuring ইউজ করো।
